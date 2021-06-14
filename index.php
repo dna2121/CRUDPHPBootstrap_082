@@ -18,7 +18,7 @@
                 </button>
                 <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
                     <div class="navbar-nav ms-auto">
-                        <a class="nav-link active" aria-current="page" href="#">Tambah Mahasiswa</a>
+                        <a class="nav-link active" aria-current="page" href="index.php">Home</a>
                         <a class="nav-link" href="#">Features</a>
                         <a class="nav-link" href="#">Pricing</a>
                     </div>
@@ -105,6 +105,7 @@
                         <!--kolom ini untuk aksi data mahasiswa-->
                         <td>
                             <!-- aksi edit dan delete, di sini menggunakan btn-sm agar tombolnya kecil-->
+                            <a href="detail.php?id=<?php echo $data['id']; ?>" class="btn btn-success btn-sm text-white">DETAIL</a>
                             <!-- link untuk masuk ke halaman edit-->
                             <!-- edit.php?id=<........-->
                             <a href="edit.php?id=<?php echo $data['id']; ?>" class="btn btn-warning btn-sm text-white">EDIT</a>
